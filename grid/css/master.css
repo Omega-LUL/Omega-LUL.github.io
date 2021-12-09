@@ -1,0 +1,36 @@
+header{
+  grid-area:he;
+  background-color: black;
+  height: calc(25vh - 10px);
+}
+aside{
+  grid-area:as;
+  background-color: lightgrey;
+  height: calc(25vh - 10px);
+}
+main{
+  grid-area:ma;
+  background-color: darkgrey;
+  height: calc(25vh - 10px);
+}
+nav{
+  grid-area:na;
+  background-color: #ffffff;
+  height: calc(25vh - 10px);
+}
+footer{
+  grid-area:fo;
+  background-color: grey;
+  height: calc(25vh - 10px);
+}
+
+#wrapper{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  grid-template-areas:
+      "he he he he"
+      "na na na na"
+      "as . ma ma"
+      "fo fo fo fo";
+}

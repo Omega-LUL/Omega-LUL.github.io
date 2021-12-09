@@ -1,0 +1,49 @@
+body{
+
+  margin: 0px;
+}
+
+nav{
+
+  width: 1300px;
+  height: 2100px;
+  background-color: #0000ff;
+  margin: 10px;
+}
+
+.box{
+
+  width: 500px;
+  height: 500px;
+  background-color: #00ff00;
+  border: 1px solid;
+  margin: 10px;
+}
+#maincontainer{
+
+display: flex;
+
+
+
+}
+
+#boxcontainer{
+
+display: flex;
+flex-wrap:wrap;
+}
+
+@media screen and (max-width:1400px){
+
+
+
+}
+@media screen and (max-width:1000px){
+
+}
+@media screen and (max-width:600px){
+
+}
+
+
+}
