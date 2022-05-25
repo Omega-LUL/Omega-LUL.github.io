@@ -89,7 +89,7 @@ header ul li
   flex-wrap: wrap;
   background-color: #2a1723;
   padding: 10px;
-  width:100vw;
+  width:100%;
 }
 .grid-item{
 
@@ -126,15 +126,16 @@ header ul li.active{
   color: #ffffff;
 }
 #watazter{
-  width: 600px;
-  height: 400px;
 
+  width: 450px; height: 265px;
+      background: url('../ParallaxBG/css_sprites.png') -10px -2627px;
 }
 #logo{
   font-family: 'Josefin Sans', sans-serif;
   font-size: 70px;
   text-decoration: none;
 }
+
 a:active{
   background-color: blue;
   color: pink;
@@ -183,7 +184,7 @@ height:425px;
 }
 
 .link{
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .grid-container{
@@ -193,10 +194,15 @@ flex-direction: column;
 }
 
 }
-@media screen and (max-width: 580px;) {
+@media screen and (max-width: 580px) {
+#logo{
+  width: 60%;
+  height: 60%;
+  left: 10px;
+}
+header{
+  width: 80%;
+}
 
-  .link{
-    font-size: 10px;
-  }
 
 }
