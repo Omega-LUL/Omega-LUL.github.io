@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <label for="favcolor">Select a color for your background:</label>
+    <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+
+    <button id="b1">skicka</button>
+
+<script>
+
+    document.body.style.backgroundColor=localStorage.getItem('färg');
+
+        console.log("skicka");
+
+        document.getElementById("b1").addEventListener("click", function(){
+          var x = document.getElementById("favcolor").value;
+          document.body.style.backgroundColor=x;
+          console.log("skicka");
+          localStorage.setItem('färg', x);
+
+        });
+</script>
+  </body>
+</html>

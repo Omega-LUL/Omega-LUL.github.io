@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+#flip {
+  padding: 5px;
+  text-align: center;
+  background-color: red;
+  border: solid 1px red;
+  width: 300px;
+  height: 40px;
+}
+
+#panel {
+  padding: 5px;
+  text-align: center;
+  background-color: white;
+  border: solid 1px white;
+  width: 300px;
+  height: 150px;
+}
+</style>
+</head>
+<body>
+
+<div id="flip">Klicka för att få upp menyn</div>
+<div id="panel">
+  <p>Mjukglass: 15kr</p>
+  <p1>Hamburgare 90g: 45kr</p1> <br>
+  <p2>Hamburgare 150g: 75kr</p2> <br>
+  <p3>amburgare 200g: 90kr</p3>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js%22%3E</script>
+
+<script>
+
+$("#panel").hide();
+
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+
+</body>
+</html>

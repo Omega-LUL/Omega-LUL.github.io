@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title></title>
+<style media="screen">
+
+    #knapp{
+      color:red;
+    }
+
+
+</style>
+
+  </head>
+  <body>
+
+    <div id="knapp">
+      knapp
+    </div>
+
+    <div id="bild">
+      yes
+    </div>
+    <div id="meny" style="position:relative; background:pink;width:200px;">
+      meny
+    </div>
+    <div id="kontakta">
+      kontakta
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script>
+
+      $("#knapp").click(function(){
+
+        $( "#bild" ).animate({
+          opacity: 0.50,
+          left: "+=60",
+          height: "toggle"
+        }, 2000, function() {
+    // Animation complete.
+        });
+        $( "#meny" ).animate({
+          opacity: 0.50,
+          left: "+=60px",
+          height: "toggle"
+        }, 2000, function() {
+
+        // Animation complete.
+        });
+        $( "#kontakta" ).animate({
+          opacity: 0.50,
+          left: "+=60px",
+          height: "toggle"
+        }, 2000, function() {
+        // Animation complete.
+        });
+
+
+      });
+$("#meny").click(function(){
+
+
+  $( "#meny" ).animate({
+    opacity: 0.50,
+    left: "+=100px",
+    height: "200px"
+  }, 2000, function() {
+
+  // Animation complete.
+  });
+
+
+
+
+
+    });
+
+
+
+    </script>
+  </body>
+</html>

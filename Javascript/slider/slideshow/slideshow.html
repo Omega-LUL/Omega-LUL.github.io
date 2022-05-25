@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+      body{
+
+        margin:0px;
+        border:0px;
+        padding:0px;
+      }
+
+
+      #window{
+
+        width:500px;
+        height:500px;
+        overflow:hidden;
+
+
+      }
+
+      #pictures{
+
+        display:flex;
+        width:1500px;
+        position:relative;
+
+
+      }
+    </style>
+  </head>
+  <body>
+
+<div id="window">
+
+
+    <div id="pictures">
+    <img src="bilder/bild1.jpg" width="500px" height="500px" alt="jordglob">
+    <img src="bilder/bild2.jpg" width="500px" height="500px" alt="triangle">
+    <img src="bilder/bild3.jpg" width="500px" height="500px" alt="rektanglar">
+    <img src="bilder/bild1.jpg" width="500px" height="500px" alt="jordglob">
+
+
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+
+var image=0;
+
+
+
+
+
+  $("#window").click(function(){
+    console.log("funkar");
+
+    image += 1;
+    console.log(image);
+
+    //$("#pictures").css("right", "+=200px");
+
+      if (image==3) {
+        image=0;
+
+        $("#pictures").animate({
+
+
+          right:"-=1000px",
+
+        }, 1, function(){
+
+
+        });
+
+
+
+
+
+      } else {
+        $("#pictures").animate({
+          right: "+=500px", }
+          ,1000,function(){
+            console.log("klar");
+
+    });
+
+      }
+
+
+
+
+
+
+  });
+
+
+
+</script>
+
+
+  </body>
+</html>

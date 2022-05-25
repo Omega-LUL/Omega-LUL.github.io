@@ -1,0 +1,202 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bgimg{
+  position:absolute;
+}
+
+img{
+
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width:100%;
+}
+
+
+
+  #woods{
+
+    z-index: -4;
+  }
+  #woods1{
+    z-index: -10;
+  }
+  #woods2{
+    z-index: -15;
+  }
+
+li {
+    list-style-type: none;
+    text-decoration: underline;
+    color: #FF10F0;
+}
+body
+{
+height: 200vh;
+min-height: 100vh;
+/*background:linear-gradient(#f72a0a, #f7b00a);*/
+/*background: #2a1723;*/
+background: #052c46;
+
+width: 100%;
+}
+header{
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  z-index: 2;
+}
+.link{
+  color: #FF10F0;
+  font-size: 25px;
+  text-decoration: none;
+}
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px
+}
+header ul
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li
+{
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #FF10F0;
+  border-radius: 20px;
+}
+.grid-container {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #2a1723;
+  padding: 10px;
+  width:100vw;
+}
+.grid-item{
+
+  width: 40vw;
+}
+
+header ul li:hover
+header ul li.active{
+  background: #373837;
+}
+#title{
+  position: absolute;
+  top: 250px;
+  right: 200px;
+  font-size: 600%;
+  font-family: 'Josefin Sans', sans-serif;
+
+  z-index:-6;
+  color:#FF10F0;
+}
+#skydd{
+
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  background: #2a1723;
+  width: 100%;
+  height: 1700px;;
+  z-index: -9;
+}
+#text{
+  position: sticky;
+  font-size: 20px;
+  color: #ffffff;
+}
+#watazter{
+  width: 600px;
+  height: 400px;
+
+}
+#logo{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 70px;
+  text-decoration: none;
+}
+a:active{
+  background-color: blue;
+  color: pink;
+}
+a:visited {
+ text-decoration: none;
+ color: #FF10F0;
+}
+#rx7{
+  width: 425px;
+  height: 425px;
+  left: 10px;
+  top: 500px;
+}
+#pixelpeople{
+  width: 425px;
+  height: 425px;
+  left: 800px;
+  top: 950px;
+}
+#worktext{
+  font-size: 70px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#animegirl{
+  height: 425px;
+  width: 425px;
+  top: 30px;
+  left: 800px;
+}
+#honda{
+  width: 600px;
+  height: 369px;
+  top: 1425px;
+  left: 10px;
+}
+#janae{
+width: 425px;
+height:425px;
+}
+
+@media screen and (max-width: 1000px) {
+
+#logo{
+  font-size: 50px;
+}
+
+.link{
+  font-size: 15px;
+}
+
+.grid-container{
+
+flex-direction: column;
+
+}
+
+}
+@media screen and (max-width: 580px;) {
+
+  .link{
+    font-size: 10px;
+  }
+
+}

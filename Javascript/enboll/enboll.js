@@ -21,7 +21,9 @@ function update(){
 
   x=x+xSpeed;
   y=y+ySpeed;
-  if (y>=h){
+  if (y+25>=h){
+
+    y=h-50;
     ySpeed=ySpeed*-1;
   }
 }
@@ -41,4 +43,4 @@ function paint(){
 }
 
 
-setInterval(paint,40);
+setInterval(paint,20);
