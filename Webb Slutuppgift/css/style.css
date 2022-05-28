@@ -33,7 +33,7 @@ img{
 li {
     list-style-type: none;
     text-decoration: underline;
-    color: #FF10F0;
+    color: #05FFCD;
 }
 body
 {
@@ -57,7 +57,7 @@ header{
   z-index: 2;
 }
 .link{
-  color: #FF10F0;
+  color: #05FFCD;
   font-size: 25px;
   text-decoration: none;
 }
@@ -66,7 +66,7 @@ header .logo
     color: #fff;
     font-weight: 700;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 25px;
     text-transform: uppercase;
     letter-spacing: 2px
 }
@@ -80,7 +80,7 @@ header ul li
 {
   text-decoration: none;
   padding: 6px 15px;
-  color: #FF10F0;
+  color: #05FFCD;
   border-radius: 20px;
 }
 .grid-container {
@@ -134,15 +134,16 @@ header ul li.active{
   font-family: 'Josefin Sans', sans-serif;
   font-size: 70px;
   text-decoration: none;
+  color: #05FFCD;
 }
 
 a:active{
   background-color: blue;
-  color: pink;
+  color: Green;
 }
 a:visited {
  text-decoration: none;
- color: #FF10F0;
+ color: #05FFCD;
 }
 #rx7{
   width: 425px;
@@ -182,9 +183,16 @@ height:425px;
 #logo{
   font-size: 50px;
 }
+#StickyDance{
+  width: 425px; height:425px;
+  background: url('../ParallaxBG/css_sprites.png') -3210px -774px;
+}
 
 .link{
   font-size: 20px;
+}
+#logo{
+  font-size: 15px;
 }
 
 .grid-container{
@@ -196,13 +204,11 @@ flex-direction: column;
 }
 @media screen and (max-width: 580px) {
 #logo{
-  width: 60%;
-  height: 60%;
-  left: 10px;
+  width: 500px;
+  height: 300px;
+  left: 12px;
 }
-header{
-  width: 80%;
-}
+
 
 
 }
