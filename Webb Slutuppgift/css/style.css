@@ -8,6 +8,10 @@
 .bgimg{
   position:absolute;
 }
+*p{
+  font-family: 'Josefin Sans', sans-serif;
+
+}
 
 img{
 
@@ -148,14 +152,13 @@ a:visited {
 #rx7{
   width: 425px;
   height: 425px;
-  left: 10px;
-  top: 500px;
+  background: url('../ParallaxBG/css_sprites.png') -1990px -10px;
+
 }
 #pixelpeople{
   width: 425px;
   height: 425px;
-  left: 800px;
-  top: 950px;
+   background: url('../ParallaxBG/css_sprites.png') -1753px -1990px;
 }
 #worktext{
   font-size: 70px;
@@ -164,35 +167,35 @@ a:visited {
 #animegirl{
   height: 425px;
   width: 425px;
-  top: 30px;
-  left: 800px;
+  background: url('../ParallaxBG/css_sprites.png') -1233px -1990px;
 }
 #honda{
-  width: 600px;
-  height: 369px;
-  top: 1425px;
-  left: 10px;
-}
+  width: 600px; height: 369px;
+      background: url('../ParallaxBG/css_sprites.png') -2273px -1990px;
+  }
 #janae{
 width: 425px;
 height:425px;
 }
-
-@media screen and (max-width: 1000px) {
-
-#logo{
-  font-size: 50px;
+#muffpix{
+  background: url('../ParallaxBG/css_sprites.png') -3210px -10px;
 }
 #StickyDance{
   width: 425px; height:425px;
   background: url('../ParallaxBG/css_sprites.png') -3210px -774px;
 }
 
+#logo{
+  font-size: 50px;
+}
+@media screen and (max-width: 1000px) {
+
+
 .link{
   font-size: 20px;
 }
 #logo{
-  font-size: 15px;
+  font-size: 25px;
 }
 
 .grid-container{
@@ -207,6 +210,10 @@ flex-direction: column;
   width: 500px;
   height: 300px;
   left: 12px;
+}
+.link{
+  font-size: 12px;
+
 }
 
 
